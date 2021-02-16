@@ -1,0 +1,198 @@
+:root {
+  /* Цвет шрифта*/
+  --gray-text-color: #757575;
+  --black-text-color: #212121;
+  --select-color: #2196f3;
+  --white-text-color: #ffffff;
+  --footer-mail-phone: rgba(255, 255, 255, 0.6);
+  /* Цвет фона, кнопок ... */
+  --header-border-line: #ececec;
+  --background-hero-footer: #2f303a;
+  --background-team: #f5f4fa;
+  --background-button: #f5f4fa;
+  --background-project-list: #ffffff;
+  --border-project-list: #eeeeee;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Обнуление некоторых стилей */
+h1,
+h2,
+h3,
+p,
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Эталонный контейнер */
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  /* outline: 1px solid red; */
+}
+
+/* Контейнер шапки */
+.page-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.head-container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  /* outline: 1px solid red; */
+}
+
+.nav-list,
+.nav-contacts-list,
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li:not(:first-child) {
+  margin-left: 50px;
+}
+
+.nav-contacts-list li:last-child {
+  margin-left: 50px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.logo-web,
+.logo-web-footer,
+.logo-studio-black {
+  font-family: 'Raleway', sans-serif;
+}
+
+.logo-web,
+.logo-web-footer {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--select-color);
+}
+
+.logo-web {
+  margin-right: 93px;
+}
+.logo-studio-black {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--black-text-color);
+}
+
+.nav-menu {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--black-text-color);
+}
+
+.nav-menu:hover,
+.nav-menu:focus,
+.nav-contacts:hover,
+.nav-contacts:focus {
+  color: var(--select-color);
+}
+
+.nav-contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--gray-text-color);
+}
+
+/* Footer */
+
+.footer-main {
+  background: var(--background-hero-footer);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: block;
+}
+
+.logo-web-footer {
+  margin-bottom: 20;
+}
+
+.footer-container {
+  display: block;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+  /* outline: 1px solid red; */
+}
+
+.address-block {
+  margin-top: 20px;
+}
+
+.footer-address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-text-color);
+  margin-top: 20px;
+}
+.footer-address-list li {
+  margin-top: 9px;
+}
+
+/* Стили Footer link */
+.footer-mail,
+.footer-phone {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-mail-phone);
+}

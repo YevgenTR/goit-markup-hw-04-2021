@@ -1,0 +1,174 @@
+.head-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu.current {
+  color: var(--select-color);
+}
+
+.logo-studio-white {
+  color: var(--white-text-color);
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--background-hero-footer);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-title {
+  width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.hero-link {
+  display: inline-block;
+  min-width: 200px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+  background-color: var(--select-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+}
+
+/* Наши принципы */
+
+.tenet {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  color: var(--gray-text-color);
+}
+
+.tenet-list {
+  display: flex;
+}
+
+.tenet-list .tenet-list-items {
+  width: 270px;
+}
+
+.tenet-list .tenet-list-items:not(:last-child) {
+  margin-right: 30px;
+}
+
+.tenet-title {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black-text-color);
+  margin-bottom: 10px;
+}
+
+.tenet-description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Чем мы занимаемся */
+
+.activities {
+  padding-bottom: 94px;
+}
+
+.activities-photos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.activities-img {
+  display: block;
+}
+
+.activities-title,
+.team-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-text-color);
+  margin-bottom: 50px;
+}
+
+/* Команда */
+.team {
+  background-color: var(--background-team);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: -30px;
+  /* justify-content: space-between; */
+}
+
+.team-unit {
+  width: calc(1170 - 90) / 4;
+  /* height: 368px; */
+  background: var(--background-project-list);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.team-unit-img {
+  display: block;
+}
+
+/* .team-unit:not(:last-child) */
+/* margin-bottom: 30px; */
+
+.team-unit:nth-child(4n) {
+  margin-right: 0px;
+}
+.team-descripion-block {
+  padding: 30px 59px;
+  /* text-align: center; */
+}
+
+.team-member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--black-text-color);
+  margin-bottom: 10px;
+}
+
+.team-position {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--gray-text-color);
+}
