@@ -15,6 +15,12 @@
 
 .hero {
   background-color: var(--background-hero-footer);
+  background-image: linear-gradient(rgba(0, 0, 0, 40%), rgba(0, 0, 0, 40%)),
+    url(../images/background/background-hero.jpg);
+  max-width: 1600px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -69,6 +75,34 @@
 
 .tenet-list .tenet-list-items:not(:last-child) {
   margin-right: 30px;
+}
+
+.tenet-list-items::before {
+  content: '';
+  display: block;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+}
+
+.antenna::before {
+  background-image: url(../images/icons/antenna1.svg);
+}
+
+.clock::before {
+  background-image: url(../images/icons/clock.svg);
+}
+
+.diagram::before {
+  background-image: url(../images/icons/diagram.svg);
+}
+
+.astronaut::before {
+  background-image: url(../images/icons/astronaut.svg);
 }
 
 .tenet-title {

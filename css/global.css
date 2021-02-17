@@ -132,14 +132,10 @@ a {
   color: var(--black-text-color);
 }
 
-.nav-menu:hover,
-.nav-menu:focus,
-.nav-contacts:hover,
-.nav-contacts:focus {
-  color: var(--select-color);
-}
-
-.nav-contacts {
+.nav-contacts-mail,
+.nav-contacts-phone {
+  display: inline-flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -147,7 +143,49 @@ a {
   color: var(--gray-text-color);
 }
 
-/* Footer */
+.nav-contacts-mail::before {
+  content: '';
+  width: 16px;
+  height: 12px;
+  /* background-color: red; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../images/icons/email.svg);
+  margin-right: 10px;
+}
+
+.nav-contacts-phone::before {
+  content: '';
+  width: 10px;
+  height: 16px;
+  /* background-color: red; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../images/icons/smartphone.svg);
+  margin-right: 10px;
+}
+
+.nav-menu:hover,
+.nav-menu:focus,
+.nav-contacts-mail:hover,
+.nav-contacts-mail:focus,
+.nav-contacts-phone:hover,
+.nav-contacts-phone:focus
+/* .nav-contacts::before:hover { */ {
+  color: var(--select-color);
+}
+
+/* .nav-contacts-mail:hover::before {
+  background-image: url(../images/icons/email-selected2.svg);
+  background-repeat: no-repeat;
+  align-items: center;
+}
+
+.nav-contacts-phone:hover::before {
+  background-image: url(../images/icons/smartphone-selected.svg);
+  background-repeat: no-repeat;
+  align-items: center;
+} */
 
 .footer-main {
   background: var(--background-hero-footer);
