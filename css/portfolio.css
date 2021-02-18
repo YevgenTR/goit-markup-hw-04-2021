@@ -71,6 +71,16 @@
   margin-bottom: 0;
 }
 
+.project-list .thumb {
+  height: 294px;
+}
+
+.project-list .project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .project-img {
   display: block;
 }

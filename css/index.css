@@ -18,7 +18,8 @@
   background-image: linear-gradient(rgba(0, 0, 0, 40%), rgba(0, 0, 0, 40%)),
     url(../images/background/background-hero.jpg);
   max-width: 1600px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
