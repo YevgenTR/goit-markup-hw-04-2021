@@ -140,7 +140,8 @@
 }
 
 .activities-title,
-.team-title {
+.team-title,
+.clients-title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -206,4 +207,24 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--gray-text-color);
+}
+
+/* Клиенты */
+
+.clients {
+  padding: 94px 0;
+}
+
+.clients-list {
+  display: flexbox;
+}
+
+.clients-list {
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  align-content: center;
+  position: absolute;
 }
