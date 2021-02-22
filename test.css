@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  margin-right: 10px;
+}
+/* section */
+.social {
+  border: double 2px black;
+}
+
+/* div */
+.social-container {
+  border: solid 2px yellow;
+}
+
+/* ul */
+.social-list {
+  display: flex;
+  border: solid 2px red;
+}
+
+/* li */
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px blue;
+}
+
+/* a */
+.social-link {
+  border: solid 1px green;
+}
+
+/* svg */
+.social-svg {
+  content: '';
+  border: solid 1px orange;
+}
+
+.social-icon {
+  border: solid 2px blueviolet;
+  /* width: 42;
+  height: 45; */
+}
